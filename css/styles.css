@@ -1,0 +1,218 @@
+/*
+  DIAGNOSTIC STYLING
+*/
+body {
+  background: black;
+}
+
+* {
+  outline: 1px dotted black;
+}
+
+/************
+LAYOUT
+************/
+body {
+  /* Center to Page   */
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+  
+  /* CSS Grid Layout   */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1em;
+}
+
+header,
+footer {
+  grid-column: 1 / span 5;
+}
+
+main {
+  grid-column: 1 / span 3;
+}
+
+aside {
+  grid-column: span 2;
+}
+
+
+/************
+HEADER
+************/
+/* Your Styles */
+h1{
+  font-family: Steak;
+  color: orangered;
+  font-size: 4em;
+  position: relative;
+  top: 10px;
+}
+h5{
+  font-family: fantasy;
+  color:white;
+  font-size: 2em;
+  position: relative;
+  bottom: 20px;
+}
+
+.pic1{
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 306px;
+}
+.pic2{
+  width: 143px;
+  position: absolute;
+  top: 0px;
+  left: 165px;
+}
+.pic3{
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}
+.pic4{
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.pic5{
+  width: 113px;
+  position: absolute;
+  top: 0px;
+  left: 403px;
+}
+.pic6{
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 510px;
+}
+.pic7{
+  width: 118px;
+  position: absolute;
+  top: 0px;
+  left: 610px;
+}
+.pic8{
+  width: 178px;
+  position: absolute;
+  top: 0px;
+  left: 725px
+}
+.pic9{
+  width: 76px;
+  position: absolute;
+  top: 0px;
+  left: 870px;
+}
+.pic10{
+  width: 113px;
+  position: absolute;
+  top: 0px;
+  left: 946px;
+}
+.pic11{
+  width: 123px;
+  position: absolute;
+  top: 0px;
+  left: 1058px;
+}
+.pic12{
+  width: 110px;
+  position: absolute;
+  top: 0px;
+  left: 1180px;
+}
+
+.pic13{
+  width: 110px;
+  position: absolute;
+  top: 0px;
+  left: 1290px;
+}
+.pic14{
+  width: 110px;
+  position: absolute;
+  top: 0px;
+  left: 1400px;
+}
+#zombie-banner {
+  margin: 0;
+  left: 0;
+}
+
+/************
+MOVIE TRAILER w/ MEDIA ELEMENT PLAYER
+************/
+/* Fit <video> to container */
+video {
+
+  max-width: 100%;
+}
+
+.mejs__currenttime, 
+.mejs__duration {
+  font-size: 18px;
+}
+
+.mejs__time-current {
+  background: tomato;
+}
+
+/************
+ACTORS
+************/
+main section { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img{
+  max-width: 75%;
+}
+figcaption {
+  color: lightgray;
+  font-family: Tw Cen MT Condensed;
+  text-align: left;
+
+}
+/********
+ASIDE
+********/
+p{
+  color: lightgray;
+  font-family: Tw Cen MT Condensed;
+  font-size: 1em;
+}
+li{
+  font-family: Tw Cen MT Condensed;;
+  font-size; 1em;
+  }
+/************
+FOOTER
+************/
+footer {
+  text-align: center;
+  color: lightgray;
+  font-family: Tw Cen MT Condensed;
+  font-size: 1em;
+}
+
+/************
+RWD
+************/
+@media (max-width: 700px) {
+
+  main,
+  aside {
+    grid-column: 1 / span 5;
+  }
+  
+}
